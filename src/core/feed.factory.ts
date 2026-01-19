@@ -118,9 +118,9 @@ export class FeedFactory {
     return feed;
   }
 
-  public user(id: string | number): UserFeed {
+  public user(username: string): UserFeed {
     const feed = new UserFeed(this.client);
-    feed.id = id;
+    feed.username = username;
     return feed;
   }
 
